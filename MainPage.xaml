@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TEMPO.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="25">
+
+            <!-- Título do App -->
+            <Label Text="App Tempo Agora"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <!-- Campo para digitar a cidade -->
+            <Entry x:Name="txtCidade"
+                   Placeholder="Digite o nome da cidade..."
+                   FontSize="18" />
+
+            <!-- Botão de Buscar -->
+            <Button Text="Consultar Clima"
+                    Clicked="OnBuscarClicked"
+                    FontSize="18" />
+
+            <!-- Label de Resultado -->
+            <Label x:Name="lblResultado"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"
+                   HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
